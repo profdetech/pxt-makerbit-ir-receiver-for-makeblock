@@ -2,7 +2,7 @@
 // (receiver module+remote controller)
 
 const enum IrButton {
-  //% block="any"
+  //% block="tous"
   Any = -1,
   //% block="▲"
   Up = 0x62,
