@@ -32,7 +32,8 @@ const enum IrButton {
   //% block="▼"
   Down = 0x98,
   //% block="F"
-  Up = 0xB0,
+  F = 0xB0,
+   //% block="1"
   Number_1 = 0x30,
   //% block="2"
   Number_2 = 0x18,
