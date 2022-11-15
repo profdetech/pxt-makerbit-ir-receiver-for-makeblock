@@ -67,9 +67,9 @@ const enum IrProtocol {
   NEC = 1,
 }
 
-//% color=#FF0000 icon="\uf1eb" block="Infrarouge" weight=999
-//% category="Infrarouge"
-namespace infrarouge {
+//% color=#0fbc11 icon="\u272a" block="MakerBit"
+//% category="MakerBit"
+namespace makerbit {
   let irState: IrState;
 
   const IR_REPEAT = 256;
@@ -239,7 +239,7 @@ namespace infrarouge {
    * @param pin IR receiver pin, eg: DigitalPin.P0
    * @param protocol IR protocol, eg: IrProtocol.Keyestudio
    */
-  
+  //% subcategory="IR Receiver"
   //% blockId="makerbit_infrared_connect_receiver"
   //% block="connect IR receiver at pin %pin and decode %protocol"
   //% pin.fieldEditor="gridpicker"
@@ -288,7 +288,7 @@ namespace infrarouge {
    * @param action the trigger action
    * @param handler body code to run when the event is raised
    */
- 
+  //% subcategory="IR Receiver"
   //% blockId=makerbit_infrared_on_ir_button
   //% block="on IR button | %button | %action"
   //% button.fieldEditor="gridpicker"
@@ -312,7 +312,7 @@ namespace infrarouge {
   /**
    * Returns the code of the IR button that was pressed last. Returns -1 (IrButton.Any) if no button has been pressed yet.
    */
-
+  //% subcategory="IR Receiver"
   //% blockId=makerbit_infrared_ir_button_pressed
   //% block="IR button"
   //% weight=70
@@ -328,7 +328,7 @@ namespace infrarouge {
    * Do something when an IR datagram is received.
    * @param handler body code to run when the event is raised
    */
-
+  //% subcategory="IR Receiver"
   //% blockId=makerbit_infrared_on_ir_datagram
   //% block="on IR datagram received"
   //% weight=40
@@ -341,7 +341,7 @@ namespace infrarouge {
    * Returns the IR datagram as 32-bit hexadecimal string.
    * The last received datagram is returned or "0x00000000" if no data has been received yet.
    */
-
+  //% subcategory="IR Receiver"
   //% blockId=makerbit_infrared_ir_datagram
   //% block="IR datagram"
   //% weight=30
@@ -358,7 +358,7 @@ namespace infrarouge {
   /**
    * Returns true if any IR data was received since the last call of this function. False otherwise.
    */
-  
+  //% subcategory="IR Receiver"
   //% blockId=makerbit_infrared_was_any_ir_datagram_received
   //% block="IR data was received"
   //% weight=80
@@ -377,7 +377,7 @@ namespace infrarouge {
    * Returns the command code of a specific IR button.
    * @param button the button
    */
-
+  //% subcategory="IR Receiver"
   //% blockId=makerbit_infrared_button_code
   //% button.fieldEditor="gridpicker"
   //% button.fieldOptions.columns=3
